@@ -5,8 +5,7 @@ basic.forever(function () {
     DigitalPin.P2,
     PingUnit.Centimeters
     )
-    basic.showNumber(Distancia)
-    if (Distancia < 10) {
+    if (Distancia < 30) {
         basic.showIcon(IconNames.No)
         pins.digitalWritePin(DigitalPin.P0, 0)
     } else {
